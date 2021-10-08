@@ -11,7 +11,6 @@ def weight_average(my_list=[]):
         sum += prod
         for i in range(len(item)):
             if (i == 1):
-                print(item[-1])
                 total += item[-1]
 
     return sum / total
