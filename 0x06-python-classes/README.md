@@ -1,5 +1,5 @@
 # Object Oriented Programming
-Class and Objects  
+## Classes and Objects  
 Class is like a template and an Object is created based  on that template  
 Data access is restricted. Methods control the access of data  
 ## OOP Principles
@@ -9,7 +9,7 @@ Data access is restricted. Methods control the access of data
 - Inheritance
   
 ## Attributes
-__dic__ stores the class attributes  
+´´´__dic__´´´ stores the class attributes  
 
 ## Methods 
 These are functions  
