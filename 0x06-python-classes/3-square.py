@@ -3,7 +3,7 @@
 
 
 class Square:
-    """Class with private instance attribute that is validated and a method area to find the area of the square"""
+    """Class with private instance attribute that is validated"""
     def __init__(self, size=0):
         if type(size) is not int:
             raise TypeError('size must be an integer')
