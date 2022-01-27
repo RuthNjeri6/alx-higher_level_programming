@@ -25,9 +25,9 @@ class Square:
 
     def my_print(self):
         if self.__size == 0:
-            print('\n')
+            print('')
         else:
             for i in range(0, self.__size):
                 for j in range(0, self.__size):
                     print('#', end="")
-                print('\n')
+                print('')
