@@ -2,9 +2,6 @@
 """Create a class Square and validate the private instance attribute"""
 
 
-from ctypes import sizeof
-
-
 class Square:
     """Class with private instance attribute that is validated"""
     def __init__(self, size=0):
