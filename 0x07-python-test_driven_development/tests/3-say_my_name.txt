@@ -1,0 +1,51 @@
+===========================
+Using say_my_name function
+============================
+
+```say_my_name``` function prints the first and last name on stdout.
+
+        >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Testing both variables as strings
+::
+        >>> say_my_name('Ruth', 'Njeri')
+        My name is Ruth Njeri
+
+Testing first name as non string
+::
+        >>> say_my_name(23, 'Mbugua')
+        Traceback (most recent call last):
+        TypeError: first_name must be a string
+
+Testing last name as non string
+::
+        >>> say_my_name('angela', 1)
+        Traceback (most recent call last):
+        TypeError: last_name must be a string
+
+Testing first name as empty string
+::
+        >>> say_my_name('', 'Akoth')
+        My name is  Akoth
+
+Testing last name as empty string
+::
+        >>> say_my_name('Hanna', '')
+        My name is Hanna 
+
+Testing for default default last name as empty string
+::
+        >>> say_my_name('Annabell')
+        My name is Annabell 
+
+Testing first name missing
+::
+        >>> say_my_name(None, 'Mum')
+        Traceback (most recent call last):
+        TypeError: first_name must be a string
+
+Testing last name missing
+::
+        >>> say_my_name('None', None)
+        Traceback (most recent call last):
+        TypeError: last_name must be a string
