@@ -1,0 +1,48 @@
+=============================
+Using text_indentation
+=============================
+
+```text_indentation```function prints a new line after the following characters 
+in a string `:`, or  `.`,  or `?``
+
+        >>> text_indentation = __import__('5-text_indentation').text_indentation
+        >>> text_indentation(' What a time. to be alone: ?  ')
+        What a time.
+        <BLANKLINE>
+        to be alone:
+        <BLANKLINE>
+        ?
+        <BLANKLINE>
+
+Testing for non string
+::
+        >>> text_indentation(123)
+        Traceback (most recent call last):
+        TypeError: text must be a string
+
+Testing for whitespaces at the begining of line
+::
+        >>> text_indentation('  this is fun')
+        this is fun
+
+Testing for whitespaces at the end of line
+::
+        >>> text_indentation('this is fun   ')
+        this is fun
+
+Testing for whitespaces at the beginning and end of line
+::
+        >>> text_indentation('  this is fun  ')
+        this is fun
+
+Testing for ?.:
+::
+        >>> text_indentation('Kwani: jana kulienda aje? aje? hehehe.')
+        Kwani:
+        <BLANKLINE>
+        jana kulienda aje?
+        <BLANKLINE>
+        aje?
+        <BLANKLINE>
+        hehehe.
+        <BLANKLINE>
