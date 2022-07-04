@@ -3,9 +3,6 @@
 """Module that defines a rectangle and its attributes"""
 
 
-from logging import raiseExceptions
-
-
 class Rectangle:
     """Class Rectangle"""
     def __init__(self, width=0, height=0):
