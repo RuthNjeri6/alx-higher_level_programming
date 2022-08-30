@@ -7,7 +7,7 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = '#'
 
-    def __int__(self, width=0, height=0):
+    def __init__(self, width=0, height=0):
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
@@ -78,5 +78,4 @@ class Rectangle:
 
     @classmethod
     def square(cls, size=0):
-        cls.__width = cls.__height = size
-        return cls()
+        return cls(size, size)
